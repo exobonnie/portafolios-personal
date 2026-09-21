@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #f5f5f7;
+    line-height: 1.47059;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+}
+
+.Encabezado {
+    background-color: #000000;
+    color: #f5f5f7;
+    padding: 0 1.5rem 6rem 1.5rem;
+    position: relative;
+    border-bottom: 1px solid #1d1d1f;
+}
+
+.navbar {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    height: 44px;
+}
+
+.logo {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #f5f5f7;
+    letter-spacing: -0.01em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #86868b;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    transition: color 0.2s cubic-bezier(0, 0, 0.58, 1);
+}
+
+.nav-links a:hover {
+    color: #f5f5f7;
+}
+
+.btn-primary {
+    background-color: #0071e3;
+    color: #ffffff;
+    padding: 0.5rem 1.1rem;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: inline-block;
+    transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0077ed;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #2997ff;
+    padding: 0.5rem 1.1rem;
+    border-radius: 980px;
+    text-decoration: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+    display: inline-block;
+    transition: all 0.2s cubic-bezier(0, 0, 0.58, 1);
+    border: 1px solid #2997ff;
+}
+
+.btn-secondary:hover {
+    background-color: #0071e3;
+    color: #ffffff;
+    border-color: #0071e3;
+}
+
+.hero-content {
+    max-width: 980px;
+    margin: 5rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.sub-heading {
+    color: #f56300;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    margin-bottom: 0.8rem;
+    color: #f5f5f7;
+}
+
+.hero-text p {
+    color: #86868b;
+    font-size: 1.25rem;
+    line-height: 1.381 per;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.hero-image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-bg-circle {
+    display: none;
+}
+
+.hero-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #333336;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+}
+
+.Principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-container {
+    padding: 7rem 1.5rem;
+    width: 100%;
+}
+
+.section-container > div,
+.section-container > ul,
+.section-container > h2 {
+    max-width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sobre-mi {
+    background-color: #000000;
+}
+
+#sobre-mi h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    color: #f5f5f7;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#sobre-mi h2::after {
+    display: none;
+}
+
+.about-card {
+    background-color: #161617;
+    padding: 4rem 3rem;
+    border-radius: 18px;
+    border: 1px solid #2d2d2d;
+    text-align: center;
+}
+
+.about-card h2 {
+    display: none;
+}
+
+.about-card h3 {
+    font-size: 1.75rem;
+    color: #a1a1a6;
+    font-weight: 400;
+    line-height: 1.33337;
+    letter-spacing: -0.01em;
+}
+
+#cursos {
+    background-color: #000000;
+}
+
+#cursos h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    color: #f5f5f7;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#cursos h2::after {
+    display: none;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.25rem;
+    list-style: none;
+}
+
+.course-card {
+    background-color: #161617;
+    padding: 2.5rem 2rem;
+    border-radius: 18px;
+    border: 1px solid #2d2d2d;
+    transition: transform 0.3s cubic-bezier(0, 0, 0.58, 1), border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.course-card:hover {
+    transform: scale(1.02);
+    border-color: #424245;
+}
+
+.course-icon {
+    width: 36px;
+    height: 36px;
+    background-color: #2d2d2d;
+    border-radius: 50%;
+    position: relative;
+}
+
+.course-icon::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #2997ff;
+    border-radius: 50%;
+}
+
+.course-card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #f5f5f7;
+    line-height: 1.2;
+}
+
+#contacto {
+    background-color: #000000;
+}
+
+#contacto h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    color: #f5f5f7;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#contacto h2::after {
+    display: none;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.25rem;
+}
+
+.contact-card {
+    background-color: #161617;
+    padding: 3rem 2.5rem;
+    border-radius: 18px;
+    border: 1px solid #2d2d2d;
+    text-align: center;
+}
+
+.contact-card span {
+    font-size: 0.875rem;
+    color: #86868b;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 0.8rem;
+}
+
+.contact-card h4 a {
+    color: #2997ff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.contact-card h4 a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #000000;
+    color: #6e6e73;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    font-size: 0.75rem;
+    border-top: 1px solid #1d1d1f;
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-text p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image {
+        order: -1;
+    }
+
+    .hero-text h1 {
+        font-size: 2.8rem;
+    }
+
+    #sobre-mi h2, #cursos h2, #contacto h2 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+}
